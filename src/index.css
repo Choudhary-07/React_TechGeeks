@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:muli , sans-serif;
+}
+
+#header{
+width:100%;
+height: 70vh;
+margin-top: 70px;
+}
+#header h1{
+    margin: 0 0 10px 0;
+    font-size:48px;
+    font-weight: 700;
+    color: black;
+}
+#header .brand-name{
+color: #3498db;
+}
+h2{
+    color: #484848;
+    font-size:24px;
+}
+.navbar{
+    background-color: #fff !important;
+}
+.navbar-brand{
+ font-size: 1.9rem !important;
+ color: #565387 !important;
+}
+.navbar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.menu_active{
+    font-weight: bold;
+    border-bottom : solid #565387;
+}
+.navbar a:hover{
+    color: #3498db !important;
+}
+
+#header .btn{
+    border: 2px solid #3498db;
+    padding: 10px 30px;
+    font-size:20px;
+    font-family: Muli;
+    transition: 0.8s;
+    cursor: pointer;
+    margin:10px;
+    border-radius:30px;
+}
+
+.header-img{
+text-align: right;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#header .animated {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+#header .animated{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@media(max-width:991px){
+    #header{
+        height:80vh;
+        text-align:center;
+    }
+    #header .header-img{
+        text-align:center;
+    }
+    #header .header-img img{
+        width: 60%;
+    }
+}
+
+@media (max-width:768 px){
+    #header{
+        margin-top:20px;
+    }
+    #header h1{
+        font-size:28px;
+    }
+    #header h2{
+        font-size: 18px;
+        margin-bottom:30px;
+    }
+    #header .header-img .img{
+        width:70%;
+    }
+}
+
+.bottom{
+    margin-bottom: 20px;
+} 
